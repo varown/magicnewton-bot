@@ -26,7 +26,7 @@ npm i
 ### 3️⃣ Get Your Session Cookies
 你需要会话 Cookies 来保持登录状态。以下是获取方法：
 
-![MagicNewton Dice Bot](https://raw.githubusercontent.com/varown/magicnewton-bot/main/cookies.png)
+![MagicNewton Dice Bot](https://raw.githubusercontent.com/varown/magicnewton-bot/refs/heads/master/cookies.png)
 
 1. 在 浏览器 中打开 [MagicNewton](https://magicnewton.com/portal?referral=aesxyn3wi03s5221)。
 2. 按 `F12` 或 `Ctrl` + `Shift` + `I` 打开开发者工具。
@@ -42,7 +42,7 @@ npm i
 ```sh
 nano cookies.json
 ```
-![MagicNewton Dice Bot](https://raw.githubusercontent.com/varown/magicnewton-bot/main/account.png)
+![MagicNewton Dice Bot](https://raw.githubusercontent.com/varown/magicnewton-bot/refs/heads/master/account.png)
 1、支持多账号，按照上图输入数值
 
 ### 5️⃣ 运行机器人
