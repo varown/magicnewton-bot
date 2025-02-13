@@ -5,7 +5,7 @@ const MAGICNEWTON_URL = "https://www.magicnewton.com/portal/rewards";
 const RANDOM_EXTRA_DELAY = () =>
   Math.floor(Math.random() * (60 - 20 + 1) + 20) * 60 * 1000; // 20-60 mins random delay
 
-const maxDelayTime = "";
+let maxDelayTime = "";
 function delay(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
