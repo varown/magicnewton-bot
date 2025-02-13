@@ -1,0 +1,22 @@
+[
+    [
+        {
+            "name": "__Secure-next-auth.session-token",
+            "value":"账户1",
+            "domain": ".magicnewton.com",
+            "path": "/",
+            "secure": true,
+            "httpOnly": true
+        }
+    ],
+    [
+        {
+            "name": "__Secure-next-auth.session-token",
+            "value":"账户2",
+            "domain": ".magicnewton.com",
+            "path": "/",
+            "secure": true,
+            "httpOnly": true
+        }
+    ]
+]

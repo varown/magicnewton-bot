@@ -1,0 +1,25 @@
+{
+  "name": "magicnewton-bot",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "magicnewton",
+    "newton",
+    "bot",
+    "automation",
+    "crypto",
+    "wallet",
+    "proxy"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "p-limit": "^6.2.0",
+    "puppeteer": "^24.1.1"
+  }
+}
