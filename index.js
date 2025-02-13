@@ -5,7 +5,7 @@ const MAGICNEWTON_URL = "https://www.magicnewton.com/portal/rewards";
 const RANDOM_EXTRA_DELAY = () =>
   Math.floor(Math.random() * (60 - 20 + 1) + 20) * 60 * 1000; // 20-60 mins random delay
 
-let maxDelayTime = "";
+let maxDelayTime = "00:00:00";
 function delay(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
@@ -108,6 +108,7 @@ const index = async (cookies) => {
           .$eval("#creditBalance", (el) => el.innerText)
           .catch(() => "Unknown");
         console.log(`💰 更新后的积分： ${userCredits}`);
+        maxDelayTime = "24:00:00";
       } else {
         console.log("⚠️ 未找到“Throw Dice”按钮。");
       }
@@ -152,9 +153,11 @@ const main = async () => {
   });
   await Promise.all(tasks);
   const extraDelay = RANDOM_EXTRA_DELAY();
-  const total = totalMs(timerText);
+  const total = totalMs(maxDelayTime);
   const time = total + extraDelay;
-  console.log(`本轮所有认为已全部结束，下轮时间：$${showTime(time)}`);
+  console.log(
+    `本轮所有认为已全部结束，当前时间${new Date()}，下轮时间：${showTime(time)}`
+  );
   await delay(time);
   main();
 };
